@@ -1,0 +1,43 @@
+
+<div>
+  <h1 style="text-align: center;">Users By Time of Day.</h1>
+  <div id="chart">
+    <apx-chart
+      [series]="chartOptions.series"
+      [chart]="chartOptions.chart"
+      [dataLabels]="chartOptions.dataLabels"
+      [plotOptions]="chartOptions.plotOptions"
+      [title]="chartOptions.title"
+    ></apx-chart>
+  </div>
+</div>
+
+<div class="col-12">
+  <div class="col-8">
+    <h1 style="text-align: center;">Session By Browsers</h1>
+
+    <div echarts [options]="option" class="demo-chart"></div>
+  </div>
+  <div  class="col-4">
+    <div echarts [options]="pieOption" class="demo-chart"></div>
+  </div>
+  <div>
+
+  </div>
+</div>
+
+<div class="col-12">
+  <h1 style="text-align: center;">Users By Countries(Ip address)</h1>
+  <div echarts [options]="mapOption"></div>
+</div>
+
+<div class="col-12">
+  <h1 style="text-align: center;">Bar Graph By Countries</h1>
+  <div echarts [options]="barOption"></div>
+</div>
+
+
+
+
+
+
